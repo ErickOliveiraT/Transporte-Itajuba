@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelecaoHorario"></activity>
+        <activity android:name=".SelecaoHorario" />
+        <activity android:name=".L1" />
+        <activity android:name=".SelecaoMapa"></activity>
     </application>
 
 </manifest>

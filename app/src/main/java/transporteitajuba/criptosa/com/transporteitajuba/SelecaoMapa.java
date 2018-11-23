@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class SelecaoHorario extends Activity {
+public class SelecaoMapa extends Activity {
 
     //Lista de Linhas
     private ListView lstLinhas;
@@ -14,7 +14,7 @@ public class SelecaoHorario extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selecao_horario);
+        setContentView(R.layout.activity_selecao_mapa);
 
         lstLinhas = (ListView) findViewById(R.id.listaLinhas);
 
@@ -37,7 +37,8 @@ public class SelecaoHorario extends Activity {
                 "L14 - Mecado X Barra (via Rio Manso)",
                 "L15 - Água Limpa X Mercado",
                 "L17 - Rebourgeon X Cruzeiro",
-                "L18 - Rancho Grande X Mercado"};
+                "L18 - Rancho Grande X Mercado",
+                "Todas as Linhas"};
 
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(
                 getApplicationContext(),
@@ -46,10 +47,5 @@ public class SelecaoHorario extends Activity {
                 linhas
         );
         lstLinhas.setAdapter(adaptador);
-
-
-
-
-
     }
 }
