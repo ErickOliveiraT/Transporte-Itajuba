@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".SelecaoHorario" />
         <activity android:name=".L1" />
-        <activity android:name=".SelecaoMapa"></activity>
+        <activity android:name=".SelecaoMapa" />
+        <activity android:name=".mapa1"></activity>
     </application>
 
 </manifest>
