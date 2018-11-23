@@ -7,14 +7,14 @@ import android.os.Bundle;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class mapa1 extends Activity {
+public class horario1 extends Activity {
 
     private PDFView pdfView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mapa1);
+        setContentView(R.layout.activity_horario1);
 
         pdfView = (PDFView) findViewById(R.id.pdf);
 
@@ -22,8 +22,8 @@ public class mapa1 extends Activity {
         Intent it = getIntent();
 
         //Recuperei a string da outra activity
-        String mapa = it.getStringExtra("mapa");
+        String horario = it.getStringExtra("linha");
 
-        pdfView.fromAsset(mapa).load();
+        pdfView.fromAsset(horario).load();
     }
 }
