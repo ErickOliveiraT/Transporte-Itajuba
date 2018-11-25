@@ -21,6 +21,7 @@ public class ResultadoRota extends Activity {
     String link = "https://www.google.com/maps/d/embed?mid=";
     private String first = "";
     private String hora = "";
+    private int matches = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,10 +92,16 @@ public class ResultadoRota extends Activity {
         }
 
         String res = "";
+        matches = match.size();
 
+        if (found) {
         for (int i = 0; i < match.size(); i++) {
             if (i != match.size()-1) res += "Linha " + (String) match.get(i).toUpperCase()+"\n";
             else res += "Linha " + (String) match.get(i).toUpperCase();
+        }}
+        else {
+            btnHorario.setEnabled(false);
+            btnMap.setEnabled(false);
         }
 
         if(found) {
@@ -126,7 +133,7 @@ public class ResultadoRota extends Activity {
             link += "1deH30LIYhKXI4kM3m9wjeo_gHCo0C7Lv";
             hora = "h6.pdf";
         }
-        else if (first.equals("7a")) {
+        else if (first.equals("7")) {
             link += "1urOuFF8AS3iwvPujDHYxaohcnAZkponr";
             hora = "h7.pdf";
         }
