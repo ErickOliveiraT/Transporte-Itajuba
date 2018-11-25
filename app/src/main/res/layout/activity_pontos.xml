@@ -4,11 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mapa1">
-
-    <WebView
-        android:id="@+id/Webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></WebView>
+    tools:context=".Pontos">
 
 </android.support.constraint.ConstraintLayout>

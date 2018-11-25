@@ -27,7 +27,7 @@ public class SelecaoMapa extends Activity {
                 "L3 - Rebourgeon X Santa Rosa (via Rodovia)",
                 "L4 - Santa Rosa X Rebourgeon (via Varginha)",
                 "L5 - Jd. das Colinas X Sta Rosa (via Varginha)",
-                "L6 - Jd. das Colinas X Sta Rosa (via Rodovia)",
+                "L6 - Jd. das Nações X Sta Rosa (via Rodovia)",
                 "L7A - Cafona X Cruzeiro (via Jd. das Colinas)",
                 "L7B - Figueiras X Mercado",
                 "L8 - Rebourgeon X Medicina (via Piedade)",
@@ -41,8 +41,7 @@ public class SelecaoMapa extends Activity {
                 "L14 - Mecado X Barra (via Rio Manso)",
                 "L15 - Água Limpa X Mercado",
                 "L17 - Rebourgeon X Cruzeiro",
-                "L18 - Rancho Grande X Mercado",
-                "Todas as Linhas"};
+                "L18 - Rancho Grande X Mercado"};
 
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(
                 getApplicationContext(),
@@ -56,82 +55,104 @@ public class SelecaoMapa extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent it = new Intent(getApplicationContext(), mapa1.class);
+                String link = "https://www.google.com/maps/d/embed?mid=";
                 switch (position) {
                     case 0:
-                        it.putExtra("mapa", "1.pdf");
+                        link += "1Ebd6t4wgoAL9ut1sro7XerRi0ceWf3u3";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 1:
-                        it.putExtra("mapa", "2.pdf");
+                        link += "1sHe22V-RqzffeD_cOxOzzybil2LQnIHb";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 2:
-                        it.putExtra("mapa", "3.pdf");
+                        link += "1XJ8SFwrGgL-ld6k869_r7_BbTaFAcRTf";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 3:
-                        it.putExtra("mapa", "4.pdf");
+                        link += "13C1cGttidJXzKunsnNFSpI4hI1D8h1h2";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 4:
-                        it.putExtra("mapa", "5.pdf");
+                        link += "1QXBMa6-tkaryldc60UoWTwo6AfQL7zti";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 5:
-                        it.putExtra("mapa", "6.pdf");
+                        link += "1deH30LIYhKXI4kM3m9wjeo_gHCo0C7Lv";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 6:
-                        it.putExtra("mapa", "7.pdf");
+                        link += "1urOuFF8AS3iwvPujDHYxaohcnAZkponr";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 7:
-                        it.putExtra("mapa", "7.pdf");
+                        link += "11uaGrjOAVi84PCs9aMAAlxqAhkYr1Kvl";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 8:
-                        it.putExtra("mapa", "8.pdf");
+                        link += "1TRuEHYS_r1FnW6qAlDTF6n7b6UeNWwzJ";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 9:
-                        Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
+                        link += "1sK_DwY-kD8i7Ah1e-FEc_K4FWtRWggme";
+                        it.putExtra("mapa", link);
+                        startActivity(it);
                         break;
                     case 10:
-                        Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
+                        link += "1wVpMUmcJ-m8GjNDeUAtJyPnVgHHXf49r";
+                        it.putExtra("mapa", link);
+                        startActivity(it);
                         break;
                     case 11:
-                        it.putExtra("mapa", "11a.pdf");
+                        link += "1BPnr_XPJqfnXqfLEPd5fy34FmpFGFLiA";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 12:
-                        it.putExtra("mapa", "11b.pdf");
+                        link += "1yISKYDcht9S6QNvOAys45U9wLhHUJbtM";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 13:
-                        it.putExtra("mapa", "11c.pdf");
+                        link += "1GgI7rNp0c9ZIvFIV3uv1TurPAV_l7c4V";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 14:
-                        Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
+                        link += "17mdfgcwJvWUm16bgNREvoTflyALkLoK8";
+                        it.putExtra("mapa", link);
+                        startActivity(it);
                         break;
                     case 15:
-                        Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
+                        link += "1du3JpYs88G9_QABK0mWTzBXHEuHlMgkt";
+                        it.putExtra("mapa", link);
+                        startActivity(it);
                         break;
                     case 16:
-                        Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
+                        link += "1WbMSZhxHnC78fJni8iN_02hjPCzyJaN7";
+                        it.putExtra("mapa", link);
+                        startActivity(it);
                         break;
                     case 17:
                         Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
                         break;
                     case 18:
-                        it.putExtra("mapa", "17.pdf");
+                        link += "1tUz_RlD9P81yPsqUB8EMq-VAp2D34S0u";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                     case 19:
-                        Toast.makeText(getApplicationContext(), "Mapa indisponível no momento", Toast.LENGTH_LONG).show();
-                        break;
-                    case 20:
-                        it.putExtra("mapa", "completo.pdf");
+                        link += "1VVIvxPzMhCxNe_csnzWrlDfKFAiHzBXq";
+                        it.putExtra("mapa", link);
                         startActivity(it);
                         break;
                 }

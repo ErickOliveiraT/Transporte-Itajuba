@@ -27,7 +27,7 @@ public class SelecaoHorario extends Activity {
                 "L3 - Rebourgeon X Santa Rosa (via Rodovia)",
                 "L4 - Santa Rosa X Rebourgeon (via Varginha)",
                 "L5 - Jd. das Colinas X Sta Rosa (via Varginha)",
-                "L6 - Jd. das Colinas X Sta Rosa (via Rodovia)",
+                "L6 - Jd. das Nações X Sta Rosa (via Rodovia)",
                 "L7A - Cafona X Cruzeiro (via Jd. das Colinas)",
                 "L7B - Figueiras X Mercado",
                 "L8 - Rebourgeon X Medicina (via Piedade)",
