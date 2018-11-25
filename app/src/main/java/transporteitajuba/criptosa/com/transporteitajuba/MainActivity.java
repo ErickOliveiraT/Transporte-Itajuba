@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
         btnRota.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, mapa1.class));
+                startActivity(new Intent(MainActivity.this, SelecaoSaida.class));
             }
         });
     }

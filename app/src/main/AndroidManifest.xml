@@ -19,10 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelecaoHorario" />
-        <activity android:name=".L1" />
         <activity android:name=".SelecaoMapa" />
         <activity android:name=".mapa1" />
         <activity android:name=".horario1" />
+        <activity android:name=".SelecaoSaida" />
+        <activity android:name=".SelecaoChegada" />
+        <activity android:name=".ResultadoRota"></activity>
     </application>
 
 </manifest>
