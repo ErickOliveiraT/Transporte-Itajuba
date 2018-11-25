@@ -42,7 +42,9 @@ public class MainActivity extends Activity {
         btnParadas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, aEmpresa.class));
+                Intent it = new Intent(getApplicationContext(), mapa1.class);
+                it.putExtra("mapa", "https://www.google.com/maps/d/embed?mid=1NofCdop56LvziM-sqLwMkwrlAAVwsulz");
+                startActivity(it);
             }
         });
         btnRota.setOnClickListener(new View.OnClickListener() {

@@ -23,7 +23,6 @@
         <activity android:name=".SelecaoMapa" />
         <activity android:name=".mapa1" />
         <activity android:name=".horario1" />
-        <activity android:name=".Pontos"></activity>
     </application>
 
 </manifest>
